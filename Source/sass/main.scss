@@ -1,0 +1,110 @@
+html
+{
+    overflow: hidden;
+    padding: 0;
+    margin: 0;
+}
+
+.wrapper
+{
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    width: 100vw;
+    background: #FEFEFE;
+    align-items: center;
+    justify-items: center;
+    
+    #game-area
+    {
+        align-self: center;
+        justify-self: center;
+        margin: auto;
+
+       .container 
+       {
+           display: flex;
+
+           flex-direction: column;
+/* 
+           position: absolute;
+           left: 0; */
+
+           background: purple;
+/* 
+           height: 600px;
+           width: 100vw; */
+
+           .hangman
+           {
+               flex-basis: 3fr;
+               width: 95vw;
+               height: 45vh;
+               background: red;
+           }
+           
+           .letterblanks
+           {
+               flex-basis: 1fr;
+               height: 5vh;
+               background: green;
+               text-align: center;
+               text-align: center;
+
+
+               ul 
+               {
+                   display: flex;
+
+                   background: red;
+                   text-align: center;
+                   justify-content: center;
+                   align-content: center;
+                   
+                   li
+                   {
+                    z-index: 1;
+                    font-size: 2rem;
+                    margin: .5rem;
+                    list-style: none;
+    
+                   }
+               }
+           }
+
+           .inputAreas
+           {
+               flex-basis:  1fr;
+               height: 35vh;
+               background:yellow;
+           }
+
+       }
+
+    
+    }
+
+    
+}
+
+#header
+    {
+        height: 4.5rem;
+        width: 100vw;
+        position: fixed;
+        top: 0;
+        left: 0;
+        background: #5264FF;
+    }
+
+#footer
+{
+    position: fixed;
+    height: 2.5rem;
+    width: 100vw;
+    bottom: 0;
+    left: 0;
+    background: #8895FF;
+}
+
+    
