@@ -6,37 +6,88 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
     <link rel="stylesheet" href="./css/main.css">
+    <link href="https://fonts.googleapis.com/css?family=Space+Mono&display=swap" rel="stylesheet">
     <title>Simple Hangman</title>
 </head>
 <body>
 
     <section id="header">
-        <h1>1</h1>
+        
+        <div class="letter-bank">
+            <div class="letter-bank-A">
+                <span>A</span> <span class="used">B</span> <span>C</span> <span>D</span> <span>E</span> <span>F</span> <span>G</span> <span>H</span> <span>I</span> <span>J</span> <span>K</span> <span>L</span> <span>M</span> 
+            </div>
+
+            <div class="letter-bank-B">
+                <span>N</span> <span>O</span> <span>P</span> <span>Q</span> <span>R</span><span>S</span> <span>T</span> <span>U</span> <span>V</span> <span>W</span> <span>X</span> <span>Y</span> <span>Z</span>
+
+            </div>
+        </div>
+        <div>
+
+            <h1>Simple Hangman</h1>
+        </div>
+        <div>
+
+        <div>
+            <img src="./images/stickman_logo.png" alt="Simple Hangeman Logo">
+        </div>
+
+        </div>
     </section>
 
 <div class="wrapper">
 
     <section id="game-area">
-        <h1>2</h1>
         <div class="container">
             
             <div class="hangman">
 
-                <h1>1</h1>
+                <div class="counter">
+                    <h1>1 2 3</h1>
+
+                    <img src="./images/stickman.png" alt="">
+                </div>
     
             </div>
     
             <div class="letterblanks">
+
+
+                <ul>
+                    <li class="letter">B</li>
+                    <li class="letter">u</li>
+                    <li class="letter">z</li>
+                    <li class="letter">z</li>
+                    <li class="letter">w</li>
+                    <li class="letter">o</li>
+                    <li class="letter">r</li>
+                    <li class="letter">d</li>
+                   <!--  <li class="letter">A</li>
+                    <li class="letter">A</li>
+                    <li class="letter">A</li>
+                    <li class="letter">A</li>
+                    <li class="letter">a</li>
+                    <li class="letter">a</li>
+                    <li class="letter">A</li>
+                    <li class="letter">A</li>
+                    <li class="letter">A</li>
+                    <li class="letter">A</li>
+                    <li class="letter">A</li>
+                    <li class="letter">A</li>  -->
+
+                </ul>
+                
                 <ul>
                     <li class="letterblank">_</li>
-                    <li class="letterblank">_</li>
-                    <li class="letterblank">_</li>
-<!--                     <li class="letterblank">_</li>
-                    <li class="letterblank">_</li>
-                    <li class="letterblank">_</li>
+                     <li class="letterblank">_</li>
+                    <li class="letterblank">_</li> 
+                     <li class="letterblank">_</li>
                     <li class="letterblank">_</li>
                     <li class="letterblank">_</li>
                     <li class="letterblank">_</li>
+                     <li class="letterblank">_</li>
+                    <!--<li class="letterblank">_</li>
                     <li class="letterblank">_</li>
                     <li class="letterblank">_</li>
                     <li class="letterblank">_</li>
@@ -50,23 +101,34 @@
                     <li class="letterblank">_</li> -->
 
                 </ul>
-
     
             </div>
     
             <div class="inputAreas">
 
-                    <h1>1</h1>
+                <form id="form" action="#">
+                    <div>
+                        <input type="text" class="letter-input">
+                        <button class="btn letter-btn">Guess Letter</button>
+                    </div>
+
+                    <div>
+                        <input type="text" class="input-word">
+                        <button class="btn">Guess Word</button>
+                    </div>
+                </form>
     
             </div>
+
         </div>
+    </section>
+
+    <section id="footer">
+            <h1>3</h1>
     </section>
 
 </div>
 
-<section id="footer">
-        <h1>3</h1>
-</section>
 
 
 
