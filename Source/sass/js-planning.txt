@@ -1,0 +1,83 @@
+A file to what is needed for the hangman game.  
+
+Game flow: 
+
+***Gameover conditions
+
+1.A word is choosen, not shown to the player, the number of letters in the word is shown.
+2.The player is given a limited number of guesses
+3. Player guesses a letter or the word
+    3.1 if correct, the letter or word is revealed
+        3.1.a If correct word game ends, player wins***
+        3.1.b If correct letter the letter is marked used in the letter bank, the game continues.
+    3.2 if wrong, the player is notified a guess is taken away
+        3.2.a if the play has guesses left (>0)
+            3.2.a.i if word the game continues
+            3.2.a.ii If letter the letter is marked used in the letter bank, the game continues
+        3.2.b if no guesses left (==0), game ends, player loses***
+
+How to accomplish:
+
+*Will have to be dealt with
+
+1.A word is choosen randomly
+    Can not find random word API, instead have 3 files with 500 words in an array each
+    file is choosen at random (ranNum from 1 to 3), word is chossen randomly (randNum 0 to 499)
+    *may cause performance  issues
+    The word has to be stored in a var
+    length of word is obtained (.length), stored in a var, letter blanks are created accordingly
+    create as many blanks as the the length of the word
+    *Will have to account for spaces, hypens and other non letters
+
+2.Give the player a certain number of guesses, will be displayed on screen
+
+3.There are two input fields, the player inputs their word/letter in the designated fields
+    An event listener is needed for each button
+
+    letter: 
+        The letter is given a class of "used" in the letterbank
+        *What happens if the user guess a letter and it already has a used class
+        The index of the letter is checked in the word (string) 
+            if -1 = letter is not present, proceed with wrong guess proceedure
+            if not -1 (!=== -1) take the index
+        reveal instances of that letter (maybe a nth child html insertion using the index)
+        *How to not reveal the word by console? maybe insert all placeholder chars, then replace content with the letter as the player guesses them
+        *Make sure to get index of all instances of the letter
+        *A monospace font was chosen for word blanks and the letters above so they align properly
+        field should clear after a guess
+        ***if a winning guess, display in the ui that the player won, gameover
+        *do not clear field if winning gues? (disable input), change box to play again?
+        *a brief history of letters guessed?
+
+    word: 
+        Check if the word is the word by comapring the user input and the chosen word
+        reveal the word 
+        *(for each letter of the word maybe a nth child html insertion using the index)
+        field should clear after a guess
+        ***if a winning guess, display in the ui that the player won, gameover
+        *do not clear field if winning gues? (disable input), change box to play again?
+        *a brief history of words guessed?
+
+    wrong guess:
+        if not game losing:
+            if letter, remove from word bank
+
+            inform play through ui
+            clear field
+            *a brief history of words guessed?
+            lower guesses left amount
+
+        If game losing
+            ***Reduce guesses to zero (0)
+            inform play through ui
+            *clear  or not to clear field on gameover?
+            *a brief history of words guessed?
+            *do not clear field if winning gues? (disable input), change box to play again?
+
+To do
+    1.Make event listeners, text if input is recieved
+    2. Make lists where words reside
+                   
+
+
+
