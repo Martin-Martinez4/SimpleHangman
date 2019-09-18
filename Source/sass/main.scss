@@ -43,9 +43,13 @@ html
         }
 
 
-        .letter-bank-A
+        .A
         {
             padding-right: 1rem;
+            span
+            {
+                padding: .15rem;
+            }
 
             .used
             {
@@ -53,9 +57,14 @@ html
             }
         }
 
-        .letter-bank-B
+        .B
         {
             padding-left: 1rem;
+
+            span
+            {
+                padding: .15rem;
+            }
 
             .used
             {
@@ -240,7 +249,7 @@ html
                        width: 5rem;
                        border-radius: .8rem;
                        font-size: .8rem;
-
+                       box-shadow: .1rem .1rem #C4C4DD;
 
                    }
 
@@ -257,8 +266,6 @@ html
     
     }    
 }
-
-
 
 #footer
 {
