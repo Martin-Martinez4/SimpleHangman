@@ -38,7 +38,7 @@ How to accomplish:
 
     letter: 
    -    The letter is given a class of "used" in the letterbank
-   /    *What happens if the user guess a letter and it already has a used class
+   -    *What happens if the user guess a letter and it already has a used class
    -     The index of the letter is checked in the word (string) 
             if -1 = letter is not present, proceed with wrong guess proceedure
    -        if not -1 (!=== -1) take the index
@@ -46,7 +46,7 @@ How to accomplish:
    -     *How to not reveal the word by console? maybe insert all placeholder chars, then replace content with the letter       as the player guesses them
    -     *Make sure to get index of all instances of the letter
    -     *A monospace font was chosen for word blanks and the letters above so they align properly
-   /     field should clear after a guess
+   -     field should clear after a guess
    -     ***if a winning guess, display in the ui that the player won, gameover
         *do not clear field if winning gues? (disable input), change box to play again?
         *a brief history of letters guessed?
@@ -55,7 +55,7 @@ How to accomplish:
    -     Check if the word is the word by comapring the user input and the chosen word
         reveal the word 
    -     *(for each letter of the word maybe a nth child html insertion using the index)
-   /     field should clear after a guess
+   -     field should clear after a guess
    -     ***if a winning guess, display in the ui that the player won, gameover
         *do not clear field if winning gues? (disable input), change box to play again?
         *a brief history of words guessed?
@@ -65,7 +65,7 @@ How to accomplish:
    -         if letter, remove from word bank
 
    -         inform play through ui
-   /         clear field
+   -         clear field
             *a brief history of words guessed?
    -         lower guesses left amount
 
@@ -77,12 +77,6 @@ How to accomplish:
             *do not clear field if winning gues? (disable input), change box to play again?
 
 To do
-    2.Inform player through UI of:
-        2.1 Game over win
-        2.2 Game over lose
-        2.3 Right letter
-        2.4 Wrong letter
-        2.5 Right word
-        2,6 Wrong Word
+Random Word
 
 

@@ -140,13 +140,13 @@ html {
             margin-top: .8rem;
             margin-left: -.8rem;
             padding: .2rem;
-            height: 2.5rem;
-            width: 5rem;
+            height: 2rem;
+            width: 6rem;
             border-radius: .8rem;
             font-size: .8rem;
             box-shadow: .1rem .1rem #C4C4DD; }
           .wrapper #game-area .container .inputAreas #form .letter-btn {
-            padding-bottom: 2.5rem; }
+            padding-bottom: 1rem; }
 
 #footer {
   position: sticky;
